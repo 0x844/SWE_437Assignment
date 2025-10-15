@@ -35,7 +35,6 @@ jobs:
         run: mvn -pl byte-buddy-dep test -Dtest=net.bytebuddy.description.type.TypeDescriptionArrayProjectionTest#testTypeAnnotationExceptionType
 
       - name: Run test with NonDex
-        run: mvn -pl byte-buddy-dep edu.illinois:nondex-maven-plugin:2.1.1:nondex \
-          -Dtest=net.bytebuddy.description.type.TypeDescriptionArrayProjectionTest#testTypeAnnotationExceptionType \
-          -DnondexRuns=10
+        run: mvn -pl byte-buddy-dep edu.illinois:nondex-maven-plugin:2.1.1:nondex -Dtest=net.bytebuddy.description.type.TypeDescriptionArrayProjectionTest#testTypeAnnotationExceptionType -DnondexRuns=25
         continue-on-error: true
+
