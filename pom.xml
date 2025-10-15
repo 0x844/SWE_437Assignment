@@ -158,6 +158,11 @@
     </scm>
 
     <dependencies>
+        <dependency>
+            <groupId>com.oneeyedmen</groupId>
+            <artifactId>nondex-maven-plugin</artifactId>
+            <version>1.0.0</version>
+        </dependency>
         <!-- Allows the suppression of spotbugs false-positives by annotations without adding an actual dependency. -->
         <dependency>
             <groupId>com.google.code.findbugs</groupId>
