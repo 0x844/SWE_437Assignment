@@ -1,0 +1,11 @@
+nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1927834
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/home/sdoudakl/SWE437Assignment/SWE_437Assignment/byte-buddy-dep/.nondex
+nondexJarDir=/home/sdoudakl/SWE437Assignment/SWE_437Assignment/byte-buddy-dep/.nondex
+nondexExecid=Y2JIOefxMxVeu7sudJf9FOqr1taEtjMbN7UHe92hI6s=
+nondexLogging=CONFIG
+test=
