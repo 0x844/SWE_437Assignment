@@ -1,0 +1,15 @@
+[INFO] Scanning for projects...
+[INFO] Inspecting build with total of 1 modules...
+[INFO] Installing Nexus Staging features:
+[INFO]   ... total of 1 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[INFO] 
+[INFO] --------------------< net.bytebuddy:byte-buddy-dep >--------------------
+[INFO] Building Byte Buddy (with dependencies) 1.14.9-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> nondex-maven-plugin:2.1.7:nondex (default-cli) > test-compile @ byte-buddy-dep >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:resources (default-resources) @ byte-buddy-dep ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /home/sdoudakl/SWE437Assignment/SWE_437Assignment/byte-buddy-dep/src/main/resources
