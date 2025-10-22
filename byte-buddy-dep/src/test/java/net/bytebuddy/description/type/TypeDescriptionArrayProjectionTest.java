@@ -35,17 +35,11 @@ public class TypeDescriptionArrayProjectionTest extends AbstractTypeDescriptionT
     }
 
     protected TypeDescription.Generic describeExceptionType(Method method, int index) {
-        TypeDescription.Generic raw = TypeDefinition.Sort.describe(
-                method.getGenericExceptionTypes()[index],
-                new TypeDescription.Generic.AnnotationReader.Delegator.ForLoadedExecutableExceptionType(method, index)
-        );
-
-        if (raw.getSort().isNonGeneric() && raw.getTypeVariableSource() != null) {
-            return TypeDescription.Generic.OfTypeVariable.of(raw.getTypeVariableSource());
-        }
-        return raw;
-    }
-
+    return TypeDefinition.Sort.describe(
+            method.getGenericExceptionTypes()[index],
+            new TypeDescription.Generic.AnnotationReader.Delegator.ForLoadedExecutableExceptionType(method, index)
+    );
+}
 
     protected TypeDescription.Generic describeSuperClass(Class<?> type) {
         return TypeDefinition.Sort.describe(type.getGenericSuperclass(),
